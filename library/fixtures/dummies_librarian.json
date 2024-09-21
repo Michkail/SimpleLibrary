@@ -1,0 +1,92 @@
+[
+    {
+        "model": "auth.user",
+        "pk": 3,
+        "fields": {
+            "username": "librarian_one",
+            "email": "librarian1@example.com",
+            "password": "pbkdf2_sha256$600000$rPo7VsxHl0B9uZfgSMTyWm$5+qVvJ7xP87N+GDHvIbKcKJISX5yw2FlvbyxQyqcD60=",
+            "is_staff": true,
+            "is_superuser": false
+        }
+    },
+    {
+        "model": "library.librarian",
+        "pk": 1,
+        "fields": {
+            "user": 3
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 4,
+        "fields": {
+            "username": "librarian_two",
+            "email": "librarian2@example.com",
+            "password": "pbkdf2_sha256$600000$Z4JygaojSGSYe6iEtvMach$518e6LEHt5hZXeuAtLvIEsbyetO2sPb0f6FqJgmXLG4=",
+            "is_staff": true,
+            "is_superuser": false
+        }
+    },
+    {
+        "model": "library.librarian",
+        "pk": 2,
+        "fields": {
+            "user": 4
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 5,
+        "fields": {
+            "username": "librarian_three",
+            "email": "librarian3@example.com",
+            "password": "pbkdf2_sha256$600000$ZvwXmKWTjuUrKB3p8VT0ZX$Tmn5UBz/psskxHqiXaLhM+ZsULnC80qMMylVaM74jRI=",
+            "is_staff": true,
+            "is_superuser": false
+        }
+    },
+    {
+        "model": "library.librarian",
+        "pk": 3,
+        "fields": {
+            "user": 5
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 6,
+        "fields": {
+            "username": "librarian_four",
+            "email": "librarian4@example.com",
+            "password": "pbkdf2_sha256$600000$NpenMWjk5uTtcRbVY9FI1u$yRPBrVES0NP4TRMuXoS4JrQoAN7JUHrtzPziXRvaqXg=",
+            "is_staff": true,
+            "is_superuser": false
+        }
+    },
+    {
+        "model": "library.librarian",
+        "pk": 4,
+        "fields": {
+            "user": 6
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 7,
+        "fields": {
+            "username": "librarian_five",
+            "email": "librarian5@example.com",
+            "password": "pbkdf2_sha256$600000$gGOe0YLCrXySNSCPFj9J2A$m4gmUWSknHnZXB56XpYiQQbkrZHrHy0ii329hKnIbRw=",
+            "is_staff": true,
+            "is_superuser": false
+        }
+    },
+    {
+        "model": "library.librarian",
+        "pk": 5,
+        "fields": {
+            "user": 7
+        }
+    }
+]

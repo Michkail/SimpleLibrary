@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token }}">
+    <title>Library System</title>
+    <script>
+        async function loadBooks() {
+            const response = await fetch('/books/');
+            const books = await response.json();
+            let output = '';
+            books.forEach(book => {
+                output += `
+                    <tr>
+                        <td>${book.title}</td>
+                        <td>${book.author}</td>
+                        <td>${book.available_copies} of ${book.total_copies}</td>
+                        <td>
+                            ${book.available_copies > 0 ? `<button onclick="borrowBook(${book.id})">Borrow</button>` : 'Unavailable'}
+                        </td>
+                    </tr>
+                `;
+            });
+            document.getElementById('book-list').innerHTML = output;
+        }
+
+        async function borrowBook(bookId) {
+            const response = await fetch(`/student/borrow/${bookId}/`, { method: 'POST' });
+            if (response.ok) {
+                alert('Book borrowed successfully');
+                await loadBooks();
+            } else {
+                alert('Failed to borrow book');
+            }
+        }
+        document.addEventListener('DOMContentLoaded', loadBooks);
+    </script>
+</head>
+<body>
+    <h1>Welcome to the Library</h1>
+    {% if user.is_authenticated %}
+        <p>Hello, {{ user.username }}! <a href="{% url 'logout' %}">Logout</a></p>
+        <div id="dashboard">
+            {% if user.is_staff %}
+                <h2>Librarian Dashboard</h2>
+                <p>You can manage books and see borrowing history.</p>
+                <a href="/librarian/manage_books/">Manage Books</a>
+                <a href="/borrowed/">View Borrowing History</a>
+            {% else %}
+                <h2>Student Dashboard</h2>
+                <p>You can check your borrowed books and renew them.</p>
+                <a href="/student/borrowed_books/">View Borrowed Books</a>
+                <a href="/borrowed/">View Borrowing History</a>
+            {% endif %}
+        </div>
+    {% else %}
+        <p><a href="{% url 'login' %}">Login</a></p>
+    {% endif %}
+    <h1>Available Books</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Available Copies</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="book-list">
+        </tbody>
+    </table>
+</body>
+</html>

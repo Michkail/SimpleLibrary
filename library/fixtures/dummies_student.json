@@ -1,0 +1,92 @@
+[
+    {
+        "model": "auth.user",
+        "pk": 8,
+        "fields": {
+            "username": "student_one",
+            "email": "student1@example.com",
+            "password": "pbkdf2_sha256$600000$xyiBkEPbW4kD6MpyFdYQAi$CLUTc6T2mr3COqHGJs6dW17wQRfTLiSPoiFB8XyNBbI=",
+            "is_staff": false,
+            "is_superuser": false
+        }
+    },
+    {
+        "model": "library.student",
+        "pk": 1,
+        "fields": {
+            "user": 8
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 9,
+        "fields": {
+            "username": "student_two",
+            "email": "student2@example.com",
+            "password": "pbkdf2_sha256$600000$K4ohuw5oUYKJUKo32HwZFl$lkEZ3DdjSw7VwSfwjo/BQj5h4u+YXVMpUCwxnAA9Cvk=",
+            "is_staff": false,
+            "is_superuser": false
+        }
+    },
+    {
+        "model": "library.student",
+        "pk": 2,
+        "fields": {
+            "user": 9
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 10,
+        "fields": {
+            "username": "student_three",
+            "email": "student3@example.com",
+            "password": "pbkdf2_sha256$600000$ikMCDbgm4uO2qRtKVBFnRv$dCndzUJG9JOpDZUEftgtHD8rFZ4+dvSQIkYQJsbevKY=",
+            "is_staff": false,
+            "is_superuser": false
+        }
+    },
+    {
+        "model": "library.student",
+        "pk": 3,
+        "fields": {
+            "user": 10
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 11,
+        "fields": {
+            "username": "student_four",
+            "email": "student4@example.com",
+            "password": "pbkdf2_sha256$600000$I4SreXHyjXWA6fdhFfum2p$RLYAjL1f17o6SvBcbwLkfK2KMk/1DMd9WXUXbzkQjBI=",
+            "is_staff": false,
+            "is_superuser": false
+        }
+    },
+    {
+        "model": "library.student",
+        "pk": 4,
+        "fields": {
+            "user": 11
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 12,
+        "fields": {
+            "username": "student_five",
+            "email": "student5@example.com",
+            "password": "pbkdf2_sha256$600000$vWAETxMUyBD1SKBNJf5EYy$wHNjYLz1Ng3tlOBH7eLLq4veCbxUfbf21VX/xS+/9OA=",
+            "is_staff": false,
+            "is_superuser": false
+        }
+    },
+    {
+        "model": "library.student",
+        "pk": 5,
+        "fields": {
+            "user": 12
+        }
+    }
+]

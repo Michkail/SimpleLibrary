@@ -1,0 +1,502 @@
+[
+    {
+        "model": "library.book",
+        "pk": 1,
+        "fields": {
+            "title": "To Kill a Mockingbird",
+            "author": "Harper Lee",
+            "total_copies": 5,
+            "available_copies": 5
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 2,
+        "fields": {
+            "title": "1984",
+            "author": "George Orwell",
+            "total_copies": 3,
+            "available_copies": 3
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 3,
+        "fields": {
+            "title": "Pride and Prejudice",
+            "author": "Jane Austen",
+            "total_copies": 4,
+            "available_copies": 4
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 4,
+        "fields": {
+            "title": "The Great Gatsby",
+            "author": "F. Scott Fitzgerald",
+            "total_copies": 2,
+            "available_copies": 2
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 5,
+        "fields": {
+            "title": "Moby Dick",
+            "author": "Herman Melville",
+            "total_copies": 3,
+            "available_copies": 3
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 6,
+        "fields": {
+            "title": "War and Peace",
+            "author": "Leo Tolstoy",
+            "total_copies": 2,
+            "available_copies": 2
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 7,
+        "fields": {
+            "title": "The Catcher in the Rye",
+            "author": "J.D. Salinger",
+            "total_copies": 4,
+            "available_copies": 4
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 8,
+        "fields": {
+            "title": "The Hobbit",
+            "author": "J.R.R. Tolkien",
+            "total_copies": 6,
+            "available_copies": 6
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 9,
+        "fields": {
+            "title": "Fahrenheit 451",
+            "author": "Ray Bradbury",
+            "total_copies": 2,
+            "available_copies": 2
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 10,
+        "fields": {
+            "title": "The Odyssey",
+            "author": "Homer",
+            "total_copies": 3,
+            "available_copies": 3
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 11,
+        "fields": {
+            "title": "The Picture of Dorian Gray",
+            "author": "Oscar Wilde",
+            "total_copies": 2,
+            "available_copies": 2
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 12,
+        "fields": {
+            "title": "Brave New World",
+            "author": "Aldous Huxley",
+            "total_copies": 3,
+            "available_copies": 3
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 13,
+        "fields": {
+            "title": "Wuthering Heights",
+            "author": "Emily Brontë",
+            "total_copies": 2,
+            "available_copies": 2
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 14,
+        "fields": {
+            "title": "The Brothers Karamazov",
+            "author": "Fyodor Dostoevsky",
+            "total_copies": 1,
+            "available_copies": 1
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 15,
+        "fields": {
+            "title": "Crime and Punishment",
+            "author": "Fyodor Dostoevsky",
+            "total_copies": 3,
+            "available_copies": 3
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 16,
+        "fields": {
+            "title": "The Grapes of Wrath",
+            "author": "John Steinbeck",
+            "total_copies": 4,
+            "available_copies": 4
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 17,
+        "fields": {
+            "title": "One Hundred Years of Solitude",
+            "author": "Gabriel García Márquez",
+            "total_copies": 3,
+            "available_copies": 3
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 18,
+        "fields": {
+            "title": "The Sound and the Fury",
+            "author": "William Faulkner",
+            "total_copies": 2,
+            "available_copies": 2
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 19,
+        "fields": {
+            "title": "Catch-22",
+            "author": "Joseph Heller",
+            "total_copies": 4,
+            "available_copies": 4
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 20,
+        "fields": {
+            "title": "The Road",
+            "author": "Cormac McCarthy",
+            "total_copies": 3,
+            "available_copies": 3
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 21,
+        "fields": {
+            "title": "The Alchemist",
+            "author": "Paulo Coelho",
+            "total_copies": 5,
+            "available_copies": 5
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 22,
+        "fields": {
+            "title": "The Fault in Our Stars",
+            "author": "John Green",
+            "total_copies": 4,
+            "available_copies": 4
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 23,
+        "fields": {
+            "title": "The Catcher in the Rye",
+            "author": "J.D. Salinger",
+            "total_copies": 3,
+            "available_copies": 3
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 24,
+        "fields": {
+            "title": "The Book Thief",
+            "author": "Markus Zusak",
+            "total_copies": 2,
+            "available_copies": 2
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 25,
+        "fields": {
+            "title": "The Perks of Being a Wallflower",
+            "author": "Stephen Chbosky",
+            "total_copies": 4,
+            "available_copies": 4
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 26,
+        "fields": {
+            "title": "The Shining",
+            "author": "Stephen King",
+            "total_copies": 2,
+            "available_copies": 2
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 27,
+        "fields": {
+            "title": "Harry Potter and the Sorcerer's Stone",
+            "author": "J.K. Rowling",
+            "total_copies": 6,
+            "available_copies": 6
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 28,
+        "fields": {
+            "title": "A Game of Thrones",
+            "author": "George R.R. Martin",
+            "total_copies": 4,
+            "available_copies": 4
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 29,
+        "fields": {
+            "title": "The Hitchhiker's Guide to the Galaxy",
+            "author": "Douglas Adams",
+            "total_copies": 3,
+            "available_copies": 3
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 30,
+        "fields": {
+            "title": "The Chronicles of Narnia",
+            "author": "C.S. Lewis",
+            "total_copies": 5,
+            "available_copies": 5
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 31,
+        "fields": {
+            "title": "The Da Vinci Code",
+            "author": "Dan Brown",
+            "total_copies": 4,
+            "available_copies": 4
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 32,
+        "fields": {
+            "title": "The Silent Patient",
+            "author": "Alex Michaelides",
+            "total_copies": 3,
+            "available_copies": 3
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 33,
+        "fields": {
+            "title": "Where the Crawdads Sing",
+            "author": "Delia Owens",
+            "total_copies": 5,
+            "available_copies": 5
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 34,
+        "fields": {
+            "title": "The Last Thing He Told Me",
+            "author": "Laura Dave",
+            "total_copies": 4,
+            "available_copies": 4
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 35,
+        "fields": {
+            "title": "Daisy Jones & The Six",
+            "author": "Taylor Jenkins Reid",
+            "total_copies": 2,
+            "available_copies": 2
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 36,
+        "fields": {
+            "title": "The Guest List",
+            "author": "Lucy Foley",
+            "total_copies": 3,
+            "available_copies": 3
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 37,
+        "fields": {
+            "title": "The Midnight Library",
+            "author": "Matt Haig",
+            "total_copies": 2,
+            "available_copies": 2
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 38,
+        "fields": {
+            "title": "Anxious People",
+            "author": "Fredrik Backman",
+            "total_copies": 4,
+            "available_copies": 4
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 39,
+        "fields": {
+            "title": "The Invisible Life of Addie LaRue",
+            "author": "V.E. Schwab",
+            "total_copies": 5,
+            "available_copies": 5
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 40,
+        "fields": {
+            "title": "Malibu Rising",
+            "author": "Taylor Jenkins Reid",
+            "total_copies": 3,
+            "available_copies": 3
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 41,
+        "fields": {
+            "title": "The Seven Husbands of Evelyn Hugo",
+            "author": "Taylor Jenkins Reid",
+            "total_copies": 4,
+            "available_copies": 4
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 42,
+        "fields": {
+            "title": "Circe",
+            "author": "Madeline Miller",
+            "total_copies": 2,
+            "available_copies": 2
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 43,
+        "fields": {
+            "title": "The Night Circus",
+            "author": "Erin Morgenstern",
+            "total_copies": 3,
+            "available_copies": 3
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 44,
+        "fields": {
+            "title": "Pachinko",
+            "author": "Min Jin Lee",
+            "total_copies": 4,
+            "available_copies": 4
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 45,
+        "fields": {
+            "title": "Normal People",
+            "author": "Sally Rooney",
+            "total_copies": 5,
+            "available_copies": 5
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 46,
+        "fields": {
+            "title": "The Vanishing Half",
+            "author": "Brit Bennett",
+            "total_copies": 3,
+            "available_copies": 3
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 47,
+        "fields": {
+            "title": "The House in the Cerulean Sea",
+            "author": "TJ Klune",
+            "total_copies": 2,
+            "available_copies": 2
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 48,
+        "fields": {
+            "title": "The Silent Patient",
+            "author": "Alex Michaelides",
+            "total_copies": 4,
+            "available_copies": 4
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 49,
+        "fields": {
+            "title": "Project Hail Mary",
+            "author": "Andy Weir",
+            "total_copies": 3,
+            "available_copies": 3
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 50,
+        "fields": {
+            "title": "Red, White & Royal Blue",
+            "author": "Casey McQuiston",
+            "total_copies": 5,
+            "available_copies": 5
+        }
+    }
+]

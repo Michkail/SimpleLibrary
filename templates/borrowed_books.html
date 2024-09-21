@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borrowed Books</title>
+    <script>
+        async function loadBorrowedBooks() {
+            // Load borrowed books for students
+            const studentResponse = await fetch('/student/borrowed_books/');
+            const studentBorrows = await studentResponse.json();
+            let studentOutput = '';
+            studentBorrows.forEach(borrow => {
+                studentOutput += `
+                    <tr>
+                        <td>${borrow.book.title}</td>
+                        <td>${borrow.return_date}</td>
+                        <td><button onclick="returnBook(${borrow.id})">Return</button></td>
+                    </tr>
+                `;
+            });
+            document.getElementById('student-borrowed-list').innerHTML = studentOutput;
+
+            // Load borrowed books for librarians
+            const librarianResponse = await fetch('/librarian/borrowed_books/');
+            const librarianBorrows = await librarianResponse.json();
+            let librarianOutput = '';
+            librarianBorrows.forEach(borrow => {
+                librarianOutput += `
+                    <tr>
+                        <td>${borrow.book.title}</td>
+                        <td>${borrow.student_name}</td>
+                        <td>${borrow.borrow_date}</td>
+                        <td>${borrow.return_date}</td>
+                        <td><button onclick="returnBook(${borrow.id})">Return</button></td>
+                    </tr>
+                `;
+            });
+            document.getElementById('librarian-borrowed-list').innerHTML = librarianOutput;
+        }
+
+        async function returnBook(borrowId) {
+            const response = await fetch(`/librarian/manage_books/return/${borrowId}/`, { method: 'POST' });
+            if (response.ok) {
+                alert('Book returned successfully');
+                await loadBorrowedBooks();
+            } else {
+                alert('Failed to return book');
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', loadBorrowedBooks);
+    </script>
+</head>
+<body>
+    <h1>Borrowed Books</h1>
+    {% if user.is_authenticated %}
+        <p>Hello, {{ user.username }}! <a href="{% url 'logout' %}">Logout</a></p>
+        {% if user.is_staff %}
+            <h2>All Borrowed Books (Librarian View)</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Borrowed By</th>
+                        <th>Borrow Date</th>
+                        <th>Return Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="librarian-borrowed-list">
+                </tbody>
+            </table>
+        {% else %}
+            <h2>Your Borrowed Books</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Return Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="student-borrowed-list">
+                </tbody>
+            </table>
+        {% endif %}
+    {% else %}
+        <p><a href="{% url 'login' %}">Login</a></p>
+    {% endif %}
+</body>
+</html>

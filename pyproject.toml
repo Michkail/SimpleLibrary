@@ -1,0 +1,11 @@
+[project]
+name = "simplelibrary"
+version = "0.1.0"
+description = "This is a simple library system for Rewardz"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "django>=4.2.16",
+    "djangorestframework>=3.15.2",
+    "psycopg2>=2.9.9",
+]
